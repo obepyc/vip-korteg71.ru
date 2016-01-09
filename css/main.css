@@ -1,5 +1,5 @@
 @import "http://webfonts.ru/import/ptsans.css";
-@import url("grid.css");
+@import url("bootstrap.css");
 
 * {margin: 0;padding: 0;}
 
@@ -9,7 +9,7 @@ body {min-width: 995px; font-family: 'PT Sans';}
 
 ul, li {list-style: none;}
 
-a {text-decoration: none;}
+a, a:hover {text-decoration: none;}
 
 /*General*/
 
@@ -17,6 +17,8 @@ a {text-decoration: none;}
 /*    max-width: 960px;*/
     margin: 0 auto;
 }
+
+.clr {clear: both;}
 
 /*Header*/
 
@@ -59,3 +61,69 @@ header {
 }
 
 .headet_text h1 {font-size: 42px;}
+
+
+/*adva*/
+
+.adva {
+    height: 100%; 
+    min-height: 600px;
+    position: relative; 
+}
+
+.adva .warp {border-bottom: solid 2px #f1adae; height: 100%;}
+
+.adva_right, .adva_left {
+    position: absolute;
+    height: 100%;
+    width: 250px;
+    background-image: url(../img/adva_bg.png);
+    background-repeat: repeat-y;
+    right: 0; 
+}
+
+.adva_left {
+    left: 0;
+    background-image: url(../img/adva_bg_left.png);
+}
+
+.adv_cont {
+    margin-top: 40px;
+    z-index: 3;
+}
+
+.adva_inf {
+    height: 122px;
+    background-image: url(../img/adva_inf.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    line-height: 85px;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.adva_item {text-align: center; margin-top: 40px;}
+
+.adva_item li {margin-bottom: 25px; color: #6e6d6b; font-size: 20px; text-align: left; position: relative; padding-left: 60px;}
+
+.adva_item span {
+    display: inline-block;
+    background: #eb5454;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 90px;
+    position: absolute;
+    left: 0;
+    top: 45%;
+    margin-top: -25px;
+    
+}
