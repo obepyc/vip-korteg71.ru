@@ -1,0 +1,61 @@
+@import "http://webfonts.ru/import/ptsans.css";
+@import url("grid.css");
+
+* {margin: 0;padding: 0;}
+
+html, body {height: 100%; width: 100%;}
+
+body {min-width: 995px; font-family: 'PT Sans';}
+
+ul, li {list-style: none;}
+
+a {text-decoration: none;}
+
+/*General*/
+
+.wrap {
+/*    max-width: 960px;*/
+    margin: 0 auto;
+}
+
+/*Header*/
+
+header {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/header_bg.jpg);
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 600px;
+}
+
+.logo {margin-top: 20px;}
+
+.menu {float: right; margin-top: 40px; border-bottom: solid 2px #fff;}
+
+.menu li {float: left;}
+
+.menu a {
+    display: block;
+    height: 44px;
+    padding: 0 20px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #fff;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.headet_text {
+    margin-top: 13%;
+    text-align: center;
+    color: #fff;
+}
+
+.headet_text h1 {font-size: 42px;}
