@@ -34,17 +34,17 @@
                 <div class="row">
                     <div class="headet_text">
                         <h1>Cадебный кортеж в Туле! Сделайте Вашу <br>
-                         свадьбу незабываемой!
-                     </h1>
-                 </div>
-             </div>
-         </div>
-     </div>
- </header>
+                           свадьбу незабываемой!
+                       </h1>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </header>
 
- <!--    Преимущества-->
+   <!--    Преимущества-->
 
- <section class="adva">
+   <section class="adva">
     <div class="warp">
         <div class="adva_left"></div>
         <div class="adva_right"></div>
@@ -93,41 +93,108 @@
                 <div class="serv_inf">- Наши услуги -</div>
             </div>
             <div class="row">
-               <div class="col-md-2 col-sm-2 col-xs-2"></div>
-                <div class="col-md-4 col-sm-4 col-xs-4">
-                    <div class="serv_item">
-                        <p>Организация свадебного кортежа</p>
-                        <img src="img/serv_item_1.png" alt="">
-                    </div>
+             <div class="col-md-2 col-sm-2 col-xs-2"></div>
+             <div class="col-md-4 col-sm-4 col-xs-4">
+                <div class="serv_item">
+                    <p>Организация свадебного кортежа</p>
+                    <img src="img/serv_item_1.png" alt="">
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-4">                    
-                    <div class="serv_item">
-                        <p>Подбор и оформление украшений</p>
-                        <img src="img/serv_item_2.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2"></div>
-                <div class="clr"></div>
             </div>
-            <div class="row">
-               <div class="col-md-2 col-sm-2 col-xs-2"></div>
-                <div class="col-md-4 col-sm-4 col-xs-4">
-                    <div class="serv_item">
-                        <p>Трансферы по России</p>
-                        <img src="img/serv_item_3.png" alt="">
-                    </div>
+            <div class="col-md-4 col-sm-4 col-xs-4">                    
+                <div class="serv_item">
+                    <p>Подбор и оформление украшений</p>
+                    <img src="img/serv_item_2.png" alt="">
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-4">                    
-                    <div class="serv_item">
-                        <p>Фотосессия на автомобиле</p>
-                        <img src="img/serv_item_4.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2"></div>
-                <div class="clr"></div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2"></div>
+            <div class="clr"></div>
+        </div>
+        <div class="row">
+         <div class="col-md-2 col-sm-2 col-xs-2"></div>
+         <div class="col-md-4 col-sm-4 col-xs-4">
+            <div class="serv_item">
+                <p>Трансферы по России</p>
+                <img src="img/serv_item_3.png" alt="">
             </div>
         </div>
+        <div class="col-md-4 col-sm-4 col-xs-4">                    
+            <div class="serv_item">
+                <p>Фотосессия на автомобиле</p>
+                <img src="img/serv_item_4.png" alt="">
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2"></div>
+        <div class="clr"></div>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- Автопарк -->
+
+<section class="gallery">
+    <div class="container">
+        <div class="row">
+           <div class="gallery_inf">- Наш автопарк -</div>
+           <div class="col-md-6 col-sm-6 col-xs-6">
+               <div class="main_gal">
+                   <img id="gal_main_img" src="" alt="">
+                   <p class="avto_price">123</p>
+               </div>
+           </div>
+           <div class="col-md-6 col-sm-6 col-xs-6">
+               <div class="mini_gal" id="sub_gal">
+                    
+               </div>
+           </div>
+       </div>
+   </div>
+</section>
+
+<section class="comment">
+    <div class="container">
+        <div class="row"></div>
     </div>
 </section>
+
+<!-- Script -->
+<script src="js/jquery.js"></script>
+
+<script type="text/javascript">
+    <?php
+    $images = array();
+    $folder = 'img/cars/';
+    $array_to_js='var imgs=[';
+    $all_files = scandir($folder);
+    for ($i=2; $i<=sizeof($all_files)-1; $i++) {
+        $array_to_js.='"'.$folder.$all_files[$i].'",';
+    }
+    echo substr($array_to_js,0,-1).'];';
+    ?>
+
+    // var n=0;
+    // var time=800;
+    // play=setInterval("chgImg()", 3000);
+
+    var doc = document.getElementById("sub_gal");
+    // function chgImg() {
+    //     $('#gal_main_img1').fadeOut(time, function() {
+    //       $(this).attr('src', imgs[n]).fadeIn(time);
+    //   });
+
+    //     n++;
+    //     if (n>=imgs.length) n=0;
+    // }
+    for(var i = 2; i < imgs.length; i++){
+        doc.innerHTML += '<div class="col-md-4 col-sm-4 col-xs-4"><img src="'+ imgs[i] +'" alt=""></div>';
+    }
+    doc.innerHTML += '<div class="clr"></div>';
+    $("#sub_gal img").on("click", function(){
+        $(".main_gal img").attr('src', $(this).attr('src'));
+        console.log($(this).attr('src'));
+    });
+    console.log(imgs.length);
+</script>
+
 </body>
 </html>

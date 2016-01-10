@@ -5,7 +5,7 @@
 
 html, body {height: 100%; width: 100%;}
 
-body {min-width: 995px; font-family: 'PT Sans';}
+body {min-width: 1000px; font-family: 'PT Sans';}
 
 ul, li {list-style: none;}
 
@@ -17,6 +17,8 @@ a, a:hover {text-decoration: none;}
 /*    max-width: 960px;*/
     margin: 0 auto;
 }
+
+.container {max-width: 1000px;}
 
 .clr {clear: both;}
 
@@ -92,7 +94,7 @@ header {
     z-index: 3;
 }
 
-.adva_inf, .serv_inf {
+.adva_inf, .serv_inf, .gallery_inf {
     height: 122px;
     background-image: url(../img/adva_inf.png);
     background-repeat: no-repeat;
@@ -133,11 +135,10 @@ header {
 .serv {
     position: relative;
     height: 100%;
-    padding: 10px 0;
+    padding-top: 10px;
     min-height: 700px;
+    border-bottom: solid 2px #c6decb;
 }
-
-.serv>.warp {border-bottom: solid 2px #c6decb;}
 
 .serv_bot, .serv_top {
     position: absolute;
@@ -155,7 +156,7 @@ header {
     background: url(../img/serv_bg.png) 0 360px;
 }
 
-.serv_inf {background-image: url(../img/serv_inf.png);}
+.serv_inf {background-image: url(../img/serv_inf.png); margin-bottom: 10px;}
 
 .serv_item {
     text-align: center;
@@ -168,3 +169,45 @@ header {
     font-weight: 300;
     margin-bottom: 10px;
 }
+
+/*Gallery*/
+
+.gallery {
+    height: 100%;
+    background: url(../img/gallery_bg.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 670px;
+    padding-top: 10px;
+}
+
+.gallery_inf {
+    background-image: url(../img/gallery_inf.png);
+}
+
+.main_gal, .mini_gal {
+    height: 450px;
+    margin-top: 30px;
+    /*background-color: #000;*/
+}
+
+.main_gal img {
+    width: 100%;
+    overflow: hidden;
+    max-height: 350px;
+
+}
+
+.mini_gal {
+    overflow-y: scroll;
+    scrollbar-3dlight-color: transition;
+    scrollbar-arrow-color: transition;
+    scrollbar-track-color: transition;
+    scrollbar-base-color: transition;
+    scrollbar-face-color: transition;
+    scrollbar-shadow-color: transition;
+    scrollbar-highlight-color: transition;
+    scrollbar-darkshadow-color: transition;
+}
+
+.mini_gal img {width: 100%; margin-bottom: 15px; height: 105px;}
