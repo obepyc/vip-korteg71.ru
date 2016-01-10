@@ -92,7 +92,7 @@ header {
     z-index: 3;
 }
 
-.adva_inf {
+.adva_inf, .serv_inf {
     height: 122px;
     background-image: url(../img/adva_inf.png);
     background-repeat: no-repeat;
@@ -127,3 +127,29 @@ header {
     margin-top: -25px;
     
 }
+
+/*Serv*/
+
+.serv {
+    position: relative;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.serv_bot, .serv_top {
+    position: absolute;
+    bottom: 0;
+    height: 360px;
+    width: 310px;
+    background: url(../img/serv_bg.png) no-repeat;
+}
+
+.ser_bot {left: 0;}
+
+.serv_top {
+    top: 0;
+    right: 0;
+    background: url(../img/serv_bg.png) 0 360px;
+}
+
+.serv_inf {background-image: url(../img/serv_inf.png);}
