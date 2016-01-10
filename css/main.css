@@ -71,7 +71,7 @@ header {
     position: relative; 
 }
 
-.adva .warp {border-bottom: solid 2px #f1adae; height: 100%;}
+.adva>.warp {border-bottom: solid 2px #f1adae; height: 100%;}
 
 .adva_right, .adva_left {
     position: absolute;
@@ -133,8 +133,11 @@ header {
 .serv {
     position: relative;
     height: 100%;
-    padding-top: 20px;
+    padding: 10px 0;
+    min-height: 700px;
 }
+
+.serv>.warp {border-bottom: solid 2px #c6decb;}
 
 .serv_bot, .serv_top {
     position: absolute;
@@ -153,3 +156,15 @@ header {
 }
 
 .serv_inf {background-image: url(../img/serv_inf.png);}
+
+.serv_item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.serv_item p {
+    font-size: 20px;
+    color: #668f6d;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
