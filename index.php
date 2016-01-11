@@ -149,6 +149,8 @@
 		</div>
 	</section>
 
+	<!-- Комментарии -->
+
 	<section class="comment">
 		<div class="comment_left"></div>
 		<div class="comment_right"></div>
@@ -195,6 +197,28 @@
 		</div>
 	</section>
 
+	<!-- Контакты -->
+
+	<div class="contacts">
+		<div class="cont_left"></div>
+		<div class="cont_right"></div>
+		<div class="container">
+			<div class="row">
+				<div class="cont_inf">- Контакты -</div>
+				<div class="col-md-3 col-sm-3 col-xs-3"></div>
+				<div class="col-md-6 col-sm-6 col-xs-6">
+					<form action="" class="cont_form">
+						<input type="text" name="name" placeholder="Имя">
+						<input type="email" name="email" placeholder="E-mail">
+						<textarea name="mess" id="" cols="30" rows="7" placeholder="Ваше сообщение"></textarea>
+						<input type="submit" value="Отправить">
+					</form>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-3"></div>
+			</div>
+		</div>
+	</div>
+
 	<!-- Script -->
 	<script src="js/jquery.js"></script>
 
@@ -209,18 +233,7 @@
 		}
 		echo substr($array_to_js,0,-1).'];';
 		?>
-
-		var doc = document.getElementById("sub_gal");
-		for(var i = 2; i < imgs.length; i++){
-			doc.innerHTML += '<div class="col-md-4 col-sm-4 col-xs-4"><img src="'+ imgs[i] +'" alt=""></div>';
-		}
-		doc.innerHTML += '<div class="clr"></div>';
-		$(".main_gal img").attr('src', imgs[2]);
-		$("#sub_gal img").on("click", function(){
-			$(".main_gal img").attr('src', $(this).attr('src'));
-			console.log($(this).attr('src'));
-		});
 	</script>
-
+	<script src="js/main.js"></script>
 </body>
 </html>

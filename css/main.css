@@ -11,6 +11,8 @@ ul, li {list-style: none;}
 
 a, a:hover {text-decoration: none;}
 
+input, button, textarea {outline: none;}
+
 /*General*/
 
 .wrap {
@@ -72,8 +74,7 @@ header {
 /*adva*/
 
 .adva {
-    height: 100%; 
-    min-height: 600px;
+    height: 650px;
     position: relative; 
 }
 
@@ -98,7 +99,7 @@ header {
     z-index: 3;
 }
 
-.adva_inf, .serv_inf, .gallery_inf, .comment_inf {
+.adva_inf, .serv_inf, .gallery_inf, .comment_inf, .cont_inf {
     height: 122px;
     background-image: url(../img/adva_inf.png);
     background-repeat: no-repeat;
@@ -144,9 +145,8 @@ header {
 
 .serv {
     position: relative;
-    height: 100%;
     padding-top: 10px;
-    min-height: 700px;
+    height: 700px;
     border-bottom: solid 2px #c6decb;
 }
 
@@ -183,11 +183,10 @@ header {
 /*Gallery*/
 
 .gallery {
-    height: 100%;
     background: url(../img/gallery_bg.jpg);
     -webkit-background-size: cover;
     background-size: cover;
-    min-height: 670px;
+    height: 670px;
     padding-top: 10px;
     border-bottom: solid 2px #fcc77e;
 }
@@ -228,11 +227,11 @@ header {
 /*Comment*/
 
 .comment {
-    height: 100%; 
-    min-height: 660px; 
+    height: 660px; 
     padding-top: 10px;
     background-color: #fcfff4;
     position: relative;
+    border-bottom: solid 2px #b0d4b5;
 }
 
 .comment_left {
@@ -279,3 +278,47 @@ header {
 .comment_item .date {font-size: 14px; padding-left: 20px;}
 
 .comment_item .text {margin: 10px 0;}
+
+/*contacts*/
+
+.contacts {
+    padding-top: 20px; 
+    height: 520px;
+    position: relative;
+}
+
+.cont_left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 210px;
+    height: 520px;
+    background: url(../img/contact_bg.jpg) 0 0;
+}
+
+.cont_right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 210px;
+    height: 520px;
+    background: url(../img/contact_bg.jpg) 210px 0;
+}
+
+.cont_inf {text-align: center; margin-bottom: 20px;}
+
+.cont_form input[type=text], .cont_form input[type=email] {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: dashed 1px #05a4db;
+    text-indent: 10px;
+}
+
+.cont_form textarea {
+    resize: none;
+    width: 100%;
+    text-indent: 10px;
+    border: dashed 1px #05a4db;
+    margin-bottom: 10px;
+}
