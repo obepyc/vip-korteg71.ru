@@ -40,7 +40,7 @@ header {
 
 .menu {
     float: right; 
-    margin-top: 40px; 
+    margin-top: 70px; 
     border-bottom: solid 2px #fff;
 }
 
@@ -73,10 +73,7 @@ header {
 
 /*adva*/
 
-.adva {
-    height: 650px;
-    position: relative; 
-}
+.adva {position: relative;}
 
 .adva>.warp {border-bottom: solid 2px #f1adae; height: 100%;}
 
@@ -198,8 +195,9 @@ header {
 .main_gal, .mini_gal {
     height: 450px;
     margin-top: 30px;
-    /*background-color: #000;*/
 }
+
+.main_gal {margin-top: 75px;}
 
 .main_gal img {
     width: 100%;

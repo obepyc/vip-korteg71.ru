@@ -13,7 +13,7 @@
 					<div class="col-md-3 col-sm-3 col-xs-3">
 						<div class="logo">
 							<a href="/" title="VIP-Korteg 71">
-								<img src="img/logo.png" alt="VIP-Korteg 71">
+								<img src="img/logo_top.png" height="140" alt="VIP-Korteg 71">
 							</a>
 						</div>
 					</div>
@@ -139,12 +139,13 @@
 				<div class="col-md-6 col-sm-6 col-xs-6">
 					<div class="main_gal">
 						<img id="gal_main_img" src="" alt="">
-						<p class="avto_price"> - Лимузины от - 20 000 руб. -</p>
+						<!-- <p class="avto_price"> - Лимузины от - 20 000 руб. -</p> -->
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-6 col-xs-6">
 					<div class="mini_gal" id="sub_gal"></div>
 				</div>
+				<div class="clr"></div>
 			</div>
 		</div>
 	</section>
