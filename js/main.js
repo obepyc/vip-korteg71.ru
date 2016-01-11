@@ -9,4 +9,29 @@ $(document).ready(function() {
 		$(".main_gal img").attr('src', $(this).attr('src'));
 		console.log($(this).attr('src'));
 	});
+
+	// Плавная прокрутка
+
+	$('a[href^="#"], a[href^="."]').click( function(){ 
+	    var scroll_el = $(this).attr('href'); 
+        if ($(scroll_el).length != 0) { 
+	    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500); 
+        }
+	    return false;
+    });
+
+    // scroll
+
+    $("#sub_gal").niceScroll({cursorcolor:"#FFA73A"});
+    $(".all_comments").niceScroll({cursorcolor:"#FFA73A"});
+    $("html").niceScroll({cursorcolor:"#668f6d", cursorwidth:15});
+
+    // form
+
+    $(".cont_form").on("submit", function(){
+
+    	alert("Форма на данный момент отключена");
+
+    	return false;
+    });
 });

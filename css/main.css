@@ -307,6 +307,8 @@ header {
 
 .cont_inf {text-align: center; margin-bottom: 20px;}
 
+.cont_form {text-align: center;}
+
 .cont_form input[type=text], .cont_form input[type=email] {
     height: 40px;
     width: 100%;
@@ -321,4 +323,34 @@ header {
     text-indent: 10px;
     border: dashed 1px #05a4db;
     margin-bottom: 10px;
+}
+
+.cont_form input[type=submit]{
+    width: 170px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    line-height: 50px;
+    background-image: url(../img/contact_button.png);
+    background-color: transparent;
+    font-size: 20px;
+    color: #fff;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*footer*/
+
+footer {
+    height: 120px;
+    background-color: #979797;
+}
+
+footer .logo {margin-top: 13px;}
+
+footer p {
+    font-size: 24px;
+    color: #fff;
+    font-style: italic;
+    margin-top: 20px;
 }

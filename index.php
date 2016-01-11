@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<header>
+	<header class="top">
 		<div class="wrap">
 			<div class="container">
 				<div class="row">
@@ -20,12 +20,12 @@
 					<div class="col-md-9 col-sm-9 col-xs-9">
 						<div class="menu">
 							<ul>
-								<li><a href="">Главная</a></li>
-								<li><a href="">Преимущества</a></li>
-								<li><a href="">Услуги</a></li>
-								<li><a href="">Автопарк</a></li>
-								<li><a href="">Отзывы</a></li>
-								<li><a href="">Контакты</a></li>
+								<li><a href=".top">Главная</a></li>
+								<li><a href=".adva">Преимущества</a></li>
+								<li><a href=".serv">Услуги</a></li>
+								<li><a href=".gallery">Автопарк</a></li>
+								<li><a href=".comment">Отзывы</a></li>
+								<li><a href=".contacts">Контакты</a></li>
 							</ul>
 						</div>
 					</div>
@@ -207,9 +207,9 @@
 				<div class="cont_inf">- Контакты -</div>
 				<div class="col-md-3 col-sm-3 col-xs-3"></div>
 				<div class="col-md-6 col-sm-6 col-xs-6">
-					<form action="" class="cont_form">
-						<input type="text" name="name" placeholder="Имя">
-						<input type="email" name="email" placeholder="E-mail">
+					<form method="post" class="cont_form">
+						<input type="text" name="name" placeholder="Имя" required>
+						<input type="email" name="email" placeholder="E-mail" required>
 						<textarea name="mess" id="" cols="30" rows="7" placeholder="Ваше сообщение"></textarea>
 						<input type="submit" value="Отправить">
 					</form>
@@ -218,6 +218,24 @@
 			</div>
 		</div>
 	</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-sm-2 col-xs-2">
+					<div class="logo">
+						<a href="/" title="VIP-Korteg 71">
+							<img src="img/logo.png" alt="VIP-Korteg 71">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4">
+					<p>Свадебное агентство в Туле</p>
+					<p>Тел: +7 (999) 99-99-99</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<!-- Script -->
 	<script src="js/jquery.js"></script>
@@ -234,6 +252,7 @@
 		echo substr($array_to_js,0,-1).'];';
 		?>
 	</script>
+	<script src="js/jquery.nicescroll.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
